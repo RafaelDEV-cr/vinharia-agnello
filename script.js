@@ -14,7 +14,7 @@ safra = parseInt(safra);
 estoque = parseInt(estoque);
 
 // verifica o conjunto valido de opcoes 
-if (vinho < 1 || vinho > 3) || (nome_vinho < 1 || nome_vinho > 3 ) {
+if ((vinho < 1 || vinho > 3) || (nome_vinho < 1 || nome_vinho > 3 )) {
     // Se a opção for inválida, exibe um alerta avisando o usuário
     alert("Digite uma opção válida");
 }
@@ -55,4 +55,6 @@ else {
    }
    else {
      console.log(`Vinho cadastrado: Sauvignon Del Vale Rose\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
+   }
 }
+
