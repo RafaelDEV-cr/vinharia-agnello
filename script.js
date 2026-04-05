@@ -8,13 +8,13 @@ let safra = prompt("De qual ano o senhor deseja a safra?");
 let estoque = prompt("Qual a quantidade em estoque?");
 
 //inserção de variaveis com o prompt sempre retornando em string, tornando necessario converte-los em valor numerico 
-nome_vinho = parseint(nome_vinho);
+nome_vinho = parseInt(nome_vinho);
 vinho = parseInt(vinho);
 safra = parseInt(safra);
 estoque = parseInt(estoque);
 
 // verifica o conjunto valido de opcoes 
-if (vinho < 1 || vinho > 3) and (nome_vinho < 1 || nome_vinho > 3 ) {
+if (vinho < 1 || vinho > 3) || (nome_vinho < 1 || nome_vinho > 3 ) {
     // Se a opção for inválida, exibe um alerta avisando o usuário
     alert("Digite uma opção válida");
 }
@@ -30,8 +30,10 @@ if (vinho == 1) {
    }
    else if (nome_vinho == 2) {
      console.log(`Vinho cadastrado: Domaine de La Romanée-Conti Tinto\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
+   }
    else {
      console.log(`Vinho cadastrado: Sauvignon Del Vale Tinto\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
+   }
 }
 else if (vinho == 2) {
    if (nome_vinho == 1) {
@@ -39,8 +41,10 @@ else if (vinho == 2) {
    }
    else if (nome_vinho == 2) {
      console.log(`Vinho cadastrado: Domaine de La Romanée-Conti Branco\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
+   }
    else {
      console.log(`Vinho cadastrado: Sauvignon Del Vale Branco\nSafra: ${safra}\nQntd no estoque: ${estoque}`);    
+   }
 }
 else {
    if (nome_vinho == 1) {
@@ -48,6 +52,7 @@ else {
    }
    else if (nome_vinho == 2) {
      console.log(`Vinho cadastrado: Domaine de La Romanée-Conti Rose\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
+   }
    else {
      console.log(`Vinho cadastrado: Sauvignon Del Vale Rose\nSafra: ${safra}\nQntd no estoque: ${estoque}`);
 }
